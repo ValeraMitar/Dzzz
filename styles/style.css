@@ -140,7 +140,7 @@ body {
 	.pole label {
 		padding-bottom: 10px;
 	}
-	.genDer,.checkBox {
+	.genDer,.checkBox,.button input {
 		margin: auto;
 		width: 90%;
 		padding: 20px 0px 20px 0px;
@@ -148,8 +148,5 @@ body {
 	.genDer fieldset {
 		border-style: solid;
 		padding: 0;
-	}
-	.button input {
-		width: 90%;
 	}
 }
