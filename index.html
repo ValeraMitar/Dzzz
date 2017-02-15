@@ -29,11 +29,11 @@
 			<fieldset>
 				<legend>Gender</legend>
 					<div>
-					<input id="genderMale" type="radio" name="male" checked="">
+					<input id="genderMale" type="radio" name="gender" checked="" value="male">
 					<label for="genderMale">Male</label>
 					</div>
 					<div>
-					<input id="genderFemale" type="radio" name="female">
+					<input id="genderFemale" type="radio" name="gender" value="female">
 					<label for="genderFemale">Female</label>
 					</div>
 			</fieldset>
@@ -43,7 +43,7 @@
 			<label for="emailInput">E-mail</label>
 		</div>
 		<div class="pole noneedFill">
-			<input type="tell" name="Phonenumber" placeholder="+375298975248" id="phoneNumber">
+			<input type="tel" name="Phonenumber" placeholder="+375298975248" id="phoneNumber">
 			<label for="phoneNumber">Phone number</label>
 		</div>
 		<div class="pole noneedFill">
@@ -276,7 +276,7 @@
 				<label for="countryType">Country</label>
 		</div>
 		<div class="pole aDress">
-			<textarea type="text" name="Adress" required="" placeholder="" id="adress"></textarea> 
+			<textarea name="Adress" required="" placeholder="" id="adress"></textarea> 
 			<label for="adress">Adress</label>
 		</div>
 		<div class="checkBox needFill" contenteditable="true">
