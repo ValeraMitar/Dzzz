@@ -1,0 +1,155 @@
+body {
+	margin: 0;
+}
+#head {
+	margin: 0 0 25px 150px;
+}
+#head h1 {
+	margin: 0;
+	padding: 20px 0 0 0;
+}
+#form {
+	width: 60%;
+	margin: auto;
+	box-shadow: 1px 1px 6px #666;
+	min-height: 80vh;
+}
+.pole {
+	display: flex;
+	justify-content: flex-end;
+	margin: auto;
+	width: 60%;
+	margin-top: 20px;
+}
+.pole label {
+	font: 14pt Times;
+}
+.pole input::-webkit-inner-spin-button {
+-webkit-appearance:none;
+}
+.pole input,textarea,select {
+	order: 1;
+	border:2px;
+	border-style: none;
+	border-bottom-style:inset;
+	width: 60%;
+	margin: 0px 0px 5px 8px;
+	padding: 0px 0px 5px 0px;
+	text-indent: 10px;
+	font: 14pt Times;
+	box-sizing: border-box;
+}
+.genDer {
+	margin-left: 44%;
+	width: 36%;
+	padding: 20px 0px 0 0px;
+	font: 14pt Times;
+}
+.genDer  div {
+	padding: 0 0 20px 0;
+}
+.genDer fieldset {
+	margin:0;
+} 
+.aDress textarea {
+	min-width:60%; 
+	max-width:60%;
+	min-height: 45px;
+}
+.checkBox {
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 44%;
+	width: 40%;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	font: 14pt Times;
+}
+.checkBox input:hover {
+	cursor: pointer;
+}
+.pole input:focus,textarea:focus,select:focus {
+	outline: none;
+}
+.pole input:hover,textarea:hover,select:hover {
+	border-color: #9797ec;
+	box-shadow: 0 1px 5px rgba(140, 140, 236, 0.56);
+}
+.needFill input:required + label::after,textarea:required + label::after {
+	content: "*";
+	color:red;
+}
+.noneedFill input + label::after,select + label::after{
+	content: "*";
+	color:white;
+}
+.button {
+	display: flex;
+	justify-content: center;
+	margin:auto;
+}
+.button input {
+	font-size: 16pt;
+	margin: auto;
+	background:#fff;
+	border: 2px solid #6398ff;
+	color:#6398ff;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 7px;
+	min-width: 100px;
+	cursor: pointer;
+	margin: 0 0 50px 0;
+}
+.button input:hover {
+	background:#6398ff;
+	color:#fff;
+}
+.button input:focus {
+	outline:none;
+	box-shadow: inset 1px 1px 5px #666;
+	text-shadow: 1px 1px 5px #000;
+}
+@media all and (max-width: 1100px) {
+	#head {
+	margin: 0 0 25px 25px;
+	}
+	#head h1 {
+	margin: 0;
+	padding: 10px 0 0 0;
+	}
+	#form {
+		flex-direction: column;
+		width: 95%;
+		min-height: 100vh;
+	}
+	.pole {
+		flex-direction: column;
+		width: 90%;
+		justify-content: flex-start;
+	}
+	.pole input,select,.aDress textarea {
+		justify-content: flex-start;
+		margin: 0;
+		padding: 10px 0 10px 0;
+		border-style: inset;
+		max-width: 100%;
+		min-width: 100%;
+		box-sizing: border-box;
+	}
+	.pole label {
+		padding-bottom: 10px;
+	}
+	.genDer,.checkBox {
+		margin: auto;
+		width: 90%;
+		padding: 20px 0px 20px 0px;
+	}
+	.genDer fieldset {
+		border-style: solid;
+		padding: 0;
+	}
+	.button input {
+		width: 90%;
+	}
+}
